@@ -27,7 +27,8 @@ affiche_films=(films)=>{
     j=false;
     for(let film of films){
         j=true;
-        console.log(`titre: ${film.titre}, annee: ${film.annee_sortie}, producteur: ${film.producteur}`)
+        //console.log(`titre: ${film.titre}, annee: ${film.annee_sortie}, producteur: ${film.producteur}`)
+        console.log(film)
     }
     if(!j){
         console.log("Liste Des Films Vide !")
