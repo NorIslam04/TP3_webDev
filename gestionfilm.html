@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gestion de Films</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .button-group {
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gestion de Films</h1>
+    
+    <div class="button-group">
+        <button onclick="afficherFilms()">Afficher les films</button>
+        <button onclick="ajouterFilm()">Ajouter un film fictif</button>
+        <button onclick="supprimerPremierFilm()">Supprimer le premier film</button>
+    </div>
+
+    <script>
+        // Tableau initial de films
+        let films = [
+            {
+                titre: "Inception",
+                annee: 2010,
+                producteur: "Christopher Nolan"
+            },
+            {
+                titre: "Le Parrain",
+                annee: 1972,
+                producteur: "Francis Ford Coppola"
+            },
+            {
+                titre: "Pulp Fiction",
+                annee: 1994,
+                producteur: "Quentin Tarantino"
+            }
+        ];
+
+        // Fonction pour afficher les films dans la console
+        function afficherFilms() {
+            console.log("Liste des films :");
+            films.forEach((film, index) => {
+                console.log(`Film ${index + 1}:`, film);
+            });
+        }
+
+        // Fonction pour ajouter un film fictif
+        function ajouterFilm() {
+            const nouveauFilm = {
+                titre: "Film XX",
+                annee: 2024,
+                producteur: "Producteur XX"
+            };
+            films.push(nouveauFilm);
+            console.log("Nouveau film ajouté !");
+            afficherFilms();
+        }
+
+        // Fonction pour supprimer le premier film
+        function supprimerPremierFilm() {
+            if (films.length > 0) {
+                const filmSupprime = films.shift();
+                console.log("Premier film supprimé :", filmSupprime);
+                afficherFilms();
+            } else {
+                console.log("Aucun film à supprimer !");
+            }
+        }
+
+        // Affichage initial des films
+        console.log("État initial du tableau :");
+        afficherFilms();
+    </script>
+</body>
+</html>
