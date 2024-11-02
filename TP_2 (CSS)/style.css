@@ -1,0 +1,17 @@
+
+#id_h1{ 
+    color: red;
+}
+
+.class_h1{ 
+    color: blue;
+}
+
+h1{
+    color: rgb(192, 82, 157);
+}
+
+div h1{
+    color: black;
+}
+
