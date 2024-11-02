@@ -39,3 +39,27 @@ table td,table th{
 #p2{
     display: inline;
 }
+
+#div1 h1{
+    border: solid 1px ;
+}
+
+#div1 span{
+    color: aliceblue;
+    background-color: black;
+    text-align: center;
+    position: relative;
+    left: 10px;
+    top: 20px;
+}
+
+#div2 img{
+    width: 80px;
+    float: left;
+    margin: 7px;
+}
+
+#div2{
+    border: solid 1px;
+}
+
