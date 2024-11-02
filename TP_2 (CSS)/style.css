@@ -26,3 +26,16 @@ table{
 table td,table th{
     border: solid 1px;
 }
+
+#x2{
+    color: rgb(0, 0, 0);
+    background-color: aqua;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 100px;
+    width: 200px;
+}
+
+#p2{
+    display: inline;
+}
