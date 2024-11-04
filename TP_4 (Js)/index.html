@@ -8,29 +8,68 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="global">
+        <div class="div_inputs">
+            <label>Nom:</label>
+            <input class="inputs" type="text">
+            <label>Prenom:</label>
+            <input class="inputs" type="text">
+            <label>Points:</label>
+            <input class="inputs" type="text">
+            <button id="btn_ajouter" onclick="add_row()">Ajouter</button>
+            </div>
     <table>
-        <tr id="tr1">
+        <thead class="thead">
             <td>N°</td>
-            <td>Nom</td>
-            <td>Prenom</td>
+            <td class="nom">Nom</td>
+            <td class="prenom">Prenom</td>
             <td>Point</td>
             <td>Select</td>
-        </tr>
-        <tr>
+        </thead>
+    <tbody>
+        <tr class="tr">
             <td>1</td>
-            <td>islam</td>
-            <td>aoudia</td>
+            <td class="nom">islam</td>
+            <td class="prenom">aoudia</td>
             <td>17</td>
-            <td><input type="checkbox"></td>
+                <td><input id="checkbox" type="checkbox" onchange="if(this.checked) {
+                 console.log('Checkbox is selected'); } 
+                 else { console.log('Checkbox is not selected'); }">
+                </td>
         </tr>
-        <tr>
+
+        <tr class="tr">
             <td>2</td>
-            <td>test1</td>
-            <td>test2</td>
+            <td class="nom">test1</td>
+            <td class="prenom">test2</td>
             <td>17</td>
-            <td><input type="checkbox"></td>
+            <td><input id="checkbox" type="checkbox"></td>
         </tr>
+    </tbody>
+
+        <tfoot>
+            <tr>
+                <td>linges: X</td>
+                <td></td>
+                <td></td>
+                <td>Sum Points: Y</td>
+                <td></td>
+            </tr>
+        </tfoot>
+        
     </table>
+
+    
+
+    <button id="btn_console">Console Table</button>
+    <button id="btn_delete">Delete</button>
+    
+
+
+
+
+</div>
+
     
 </body>
 </html>
