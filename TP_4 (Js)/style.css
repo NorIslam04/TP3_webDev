@@ -1,0 +1,17 @@
+table td, table tr{
+    border: solid 1px;
+    width: 100px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+#tr1{
+    background-color: rgb(29, 98, 182);
+    font-weight: bold;
+    color: aliceblue;
+}
+table{
+    border: solid 1px;
+    border-collapse: collapse;
+    margin:40px auto;
+    
+}

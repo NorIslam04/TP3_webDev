@@ -63,6 +63,9 @@ table td,table th{
     border: solid 1px;
     height: 160px;
 }
+div2 p{
+    margin: 3px;
+}
 
 
 #div3{
