@@ -11,11 +11,11 @@
     <div class="global" style="border: 1px solid black;">
         <div class="div_inputs">
             <label>Nom:</label>
-            <input class="inputs" type="text">
+            <input class="inputs" id="nom" type="text">
             <label>Prenom:</label>
-            <input class="inputs" type="text">
+            <input class="inputs" id="prenom" type="text">
             <label>Points:</label>
-            <input class="inputs" type="text">
+            <input class="inputs" id="point" type="text">
             <button id="btn_ajouter" onclick="add_row()">Ajouter</button>
         </div>
 
@@ -28,37 +28,22 @@
             <td>Select</td>
         </thead>
     <tbody>
-        <tr class="tr">
-            <td>1</td>
-            <td>islam</td>
-            <td>aoudia</td>
-            <td>17</td>
-                <td><input id="checkbox" type="checkbox" >
-                </td>
-        </tr>
-
-        <tr class="tr">
-            <td>2</td>
-            <td class="nom">test1</td>
-            <td class="prenom">test2</td>
-            <td>17</td>
-            <td><input id="checkbox" type="checkbox"></td>
-        </tr>
+      
     </tbody>
 
     <tfoot>
             <tr>
-                <td>linges= X</td>
+                <td id="lignes">linges= 0</td>
                 <td></td>
                 <td></td>
-                <td>Sum Points= Y</td>
+                <td id="sum">Sum Points= 0</td>
                 <td></td>
             </tr>
     </tfoot>
     </table>
 
-    <button id="btn_console">Console Table</button>
-    <button id="btn_delete">Delete</button>
+    <button id="btn_console" onclick="console_tableau(etudiant)">Console Table</button>
+    <button id="btn_delete" onclick="delete_row()">Delete</button>
 
 
 </div>
