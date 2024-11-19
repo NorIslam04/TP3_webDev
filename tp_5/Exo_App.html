@@ -7,28 +7,36 @@
     <link rel="stylesheet" href="Exo_App.css">
 </head>
 <body>
+
+    <div id="div1">
+        <h1>TP 4 : Fiche De Projet De Fin D'etudes</h1>
+        <h1>(Licence/Master), Filier Informatique</h1>
+        <hr>
+        <h5>Votre nom et votre photo associés à votre compte Google seront enregistrés lorsque vous importerez des fichiers et que vous enverrez ce formulaire. Votre adresse e-mail ne fait pas partie de votre réponse.</h4>
+        <h5 style="color:red">*Obligatoire</h5>
+    </div>
     <form action="Exo_App.php" method="post">
 
     <div id="div1">
-        <label>Nom </label>
+        <label>Nom<span> *</span> </label>
         <br>
         <input id="input1" type="text" id="nom" placeholder="Votre reponse" required>
     </div>
 
     <div id="div1">
-        <label>Prenom </label>
+        <label>Prenom<span> *</span> </label>
         <br>
         <input id="input1" type="text" id="nom" placeholder="Votre reponse" required>
     </div>
 
     <div id="div1">
-        <label>Matricule </label>
+        <label>Matricule<span> *</span> </label>
         <br>
         <input id="input1" type="number" id="nom" placeholder="Votre reponse" required>
     </div>
 
     <div id="div1">
-        <label>Palier</label>
+        <label>Palier<span> *</span></label>
         <br>
             <div>
                 <input type="radio" id="Licence" name="spe" value="Licence">
@@ -41,7 +49,7 @@
     </div>
 
     <div id="div1">
-        <label>Specialite</label>
+        <label>Specialite<span> *</span></label>
         <select>
             <option value="Informatique">Informatique</option>
             <option value="ST">ST</option>
@@ -51,7 +59,7 @@
     </div>
 
     <div id="div1">
-        <label>Type du projet</label>
+        <label>Type du projet<span> *</span></label>
         <br>
             <div>
                 <input type="radio" id="Interne" name="type" value="Interne">
@@ -64,7 +72,7 @@
     </div>
 
     <div id="div1">
-        <label>Domaine</label>
+        <label>Domaine<span> *</span></label>
         <div>
         <input type="checkbox" id="gltb" name="domain">
         <label for="gltb">Génie Logiciel, Système d'Information et Base de Données</label><br>
@@ -86,13 +94,13 @@
     </div>
 
     <div id="div1">
-        <label>Intitule du Projet</label>
+        <label>Intitule du Projet<span> *</span></label>
         <br>
         <input id="input1" type="text" id="nom" placeholder="Votre reponse" required>
     </div>
 
     <div id="div1">
-        <label>Resume du Projet</label>
+        <label>Resume du Projet<span> *</span></label>
         <br>
         <input id="input1" type="text" id="nom" placeholder="Votre reponse" required>
     </div>
