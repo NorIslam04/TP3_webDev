@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Exo_App.css">
+    <script src="scripts.js"></script>
 </head>
 <body>
     <div id="div1">
@@ -22,7 +23,8 @@
         <h5>Votre nom et votre photo associés à votre compte Google seront enregistrés lorsque vous importerez des fichiers et que vous enverrez ce formulaire. Votre adresse e-mail ne fait pas partie de votre réponse.</h4>
         <h5 style="color:red">*Obligatoire</h5>
     </div>
-    <form action="Exo_App.php" method="post">
+
+    <form >
 
     <div id="div1">
         <label>Nom<span> *</span> </label>
@@ -113,7 +115,7 @@
     </div>
 
     <div id="btn">       
-        <button id="btn1" type="submit">Envoyer</button>
+        <button id="btn1" type="submit" onclick="ok()">Envoyer</button>
         <button id="btn2" type="reset">Efaccer formulaire</button>
     </div>
     </form>
