@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="Exo_App.css">
 </head>
 <body>
+    <form action="Exo_App.php" method="post">
+
     <div id="div1">
         <label>Nom </label>
         <br>
@@ -37,5 +39,66 @@
                 <label for="Master">Master</label>
             </div>
     </div>
+
+    <div id="div1">
+        <label>Specialite</label>
+        <select>
+            <option value="Informatique">Informatique</option>
+            <option value="ST">ST</option>
+            <option value="GAT">GAT</option>
+            <option value="SM">SM</option>
+          </select>
+    </div>
+
+    <div id="div1">
+        <label>Type du projet</label>
+        <br>
+            <div>
+                <input type="radio" id="Interne" name="type" value="Interne">
+                <label for="Interne">Interne</label>
+            </div>
+            <div>
+                <input type="radio" id="Externe" name="type" value="Externe">
+                <label for="Externe">Externe</label>
+            </div>
+    </div>
+
+    <div id="div1">
+        <label>Domaine</label>
+        <div>
+        <input type="checkbox" id="gltb" name="domain">
+        <label for="gltb">Génie Logiciel, Système d'Information et Base de Données</label><br>
+        <input type="checkbox" id="rsmse" name="domain">
+        <label for="rsmse">Réseaux Sécurité, Réseaux Mobiles et Système d'Exploitation</label><br>
+        <input type="checkbox" id="iamh" name="domain">
+        <label for="iamh">Intelligence Artificielle et Méta Heuristiques</label><br>
+        <input type="checkbox" id="wmd" name="domain">
+        <label for="wmd">Développement Web et Mobile</label><br>
+        <input type="checkbox" id="architecture" name="domain">
+        <label for="architecture">Architecture</label><br>
+        <input type="checkbox" id="vei" name="domain">
+        <label for="vei">Vision et Imagerie</label><br>
+        <input type="checkbox" id="it" name="domain">
+        <label for="it">Informatique Théorique</label><br>
+        <input type="checkbox" id="bioinformatic" name="domain">
+        <label for="bioinformatic">BioInformatique</label><br>
+        </div>
+    </div>
+
+    <div id="div1">
+        <label>Intitule du Projet</label>
+        <br>
+        <input id="input1" type="text" id="nom" placeholder="Votre reponse" required>
+    </div>
+
+    <div id="div1">
+        <label>Resume du Projet</label>
+        <br>
+        <input id="input1" type="text" id="nom" placeholder="Votre reponse" required>
+    </div>
+
+    <button id="btn" type="submit">Envoyer</button>
+
+    </form>
 </body>
 </html>
