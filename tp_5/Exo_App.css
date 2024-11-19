@@ -1,0 +1,28 @@
+#input1{
+    border:0px;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(117, 117, 117);
+    text-decoration: none;
+    outline: none;
+}
+
+#div1{
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(252, 252, 252);
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+}
+
+body{
+    background-color: rgb(135, 138, 235);
+    text-align: center;
+    font-family: "Arial";
+}
+
+#div1 input{
+    margin-top: 20px;
+   
+}

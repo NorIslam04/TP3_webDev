@@ -99,3 +99,7 @@ tfoot tr , tfoot td{
     margin-bottom: 10px;
     cursor: pointer;
 }
+
+checkbox{
+    cursor: pointer;
+}
