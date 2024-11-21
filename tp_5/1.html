@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            color:red;
+            text-decoration: underline;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <h3>Exo 1:</h3>
+    <label for="tel">Tel:</label>
+    <input type="tel" id="tel" name="tel" value="0771-11-22-33">
+    <br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" value="mo.boubenia@gmail.com">
+    <br><br>
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" value="2018-07-22">
+    <br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" value="********">
+    <br><br>
+    <label for="valeur">Valeur:</label>
+    <select id="valeur" name="valeur">
+        <option value="42" selected>42</option>
+    </select>
+
+    <br><br>
+    <h3>Exo 2:</h3>
+    <label for="longtext">Mon commentaire:</label>
+    <br><br>
+  <textarea id="longtext" name="longtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus officiis eos dolor deserunt iure at. Harum molestias natus temporibus laborum commodi optio delectus aliquid? Esse temporibus, rerum reiciendis ullam quis vitae autem non illum consectetur. Ex possimus numquam deleniti perspiciatis quaerat animi esse aut amet voluptatem? Nulla ea enim perspiciatis, ex delectus, in fuga natus cumque repellendus ad vel dolor expedita aspernatur officiis. Iste expedita dolorem aliquid autem placeat tempora numquam laboriosam voluptatum necessitatibus nulla, eligendi commodi nostrum distinctio culpa ut sapiente saepe nemo doloremque. Nisi blanditiis temporibus magnam, nihil consequatur, iste explicabo est, molestiae pariatur maxime minima! Ut, rem?</textarea>
+    <br><br>
+    <h3>Exo 3:</h3>
+
+    <label>Genre:</label>
+    <div>
+        <input type="radio" id="Interne" name="type" value="Interne">
+        <label for="Interne">Interne</label>
+    </div>
+    <div>
+        <input type="radio" id="Externe" name="type" value="Externe">
+        <label for="Externe">Externe</label>
+    </div>
+    <br><br>
+    <h3>Exo 4:</h3>
+    <label>Mobilite:</label>
+        <div>
+        <input type="checkbox" >
+        <label for="gltb">j'ai une voiture</label><br>
+        <input type="checkbox">
+        <label for="rsmse">j'ai un moto</label><br>
+        <input type="checkbox">
+        <label for="iamh">j'ai un velo</label><br>
+        <input type="checkbox">
+        <label for="wmd">je suis a pied</label><br>
+        </div>
+    <br><br>
+    <h3>Exo 5:</h3>
+
+    <label>Liste avec possibilité de saisir</label>
+    <input list="browsers" name="browser" id="browser">
+    <datalist id="browsers">
+        <option value="Volvo">
+        <option value="Saab">
+        <option value="Mercedes">
+        <option value="Audi">
+      </datalist>
+    <br><br>
+    <h3>Exo 6:</h3>
+      <label>Liste sans possibilité de saisir</label>
+      <select>
+      <option>Volvo</option>
+      <option>Saab</option>
+      <option>Mercedes</option>
+      <option>Audi</option>
+      </select>
+      <br><br>
+      <label>Liste sans possibilité de saisir (avec plusieurs choix, en appuyant sur "Shift")</label>
+      <br>
+      <select multiple>
+      <option>Volvo</option>
+      <option>Saab</option>
+      <option>Mercedes</option>
+      <option>Audi</option>
+      </select>
+      <br><br>
+      <h3>Exo 7:</h3>
+      <fieldset style="width: 15%;">
+        <legend>Cordonnees:</legend>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+      </fieldset>
+      <br><br>
+
+      <h3>Exo 8:</h3>
+      <form>
+        <label >First name:</label>
+        <input type="text" id="fname" ><br><br>
+        <label >Last Name:</label>
+        <input type="text" id="lname" ><br><br>
+        <label >Points:</label>
+        <input type="number" id="points" ><br><br>
+        <button type="submit">Inserer</button>
+      </form>
+
+</body>
+</html>
