@@ -1,0 +1,28 @@
+<table border="1">
+    <?php
+    $etudiants = [
+        ["nom" => "Alice", "moyenne" => 15],
+        ["nom" => "Bob", "moyenne" => 9],
+        ["nom" => "Charlie", "moyenne" => 12],
+        ["nom" => "David", "moyenne" => 8],
+        ["nom" => "Eve", "moyenne" => 14]
+    ];
+    
+    $taille = count($etudiants);
+    $i = 0;  // Initialisation de $i
+    echo "<tr><th>Nom</th><th>Moyenne</th></tr>";
+    while ($i < $taille) {
+        if ($etudiants[$i]['moyenne'] >= 10) {
+            echo "<tr>
+                <td>" . $etudiants[$i]['nom'] . "</td>
+                <td style='background-color: rgba(0, 128, 0, 0.724);'>" . $etudiants[$i]['moyenne'] . "</td></tr>";
+        } else {
+            echo "<tr>
+                <td>" . $etudiants[$i]['nom'] . "</td>
+                <td style='background-color: rgba(128, 21, 0, 0.644);'>" . $etudiants[$i]['moyenne'] . "</td></tr>";
+        }
+        $i++;
+    }
+    ?>
+    </table>
+    
