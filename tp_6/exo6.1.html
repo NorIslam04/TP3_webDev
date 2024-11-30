@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 6 - Formulaire Avancé</title>
+</head>
+<body>
+    <h1>Bienvenue sur Exercice 6</h1>
+    <form action="exo6.2.php" method="POST">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+        <br><br>
+
+        <label for="message">Message :</label>
+        <br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <label>Genre :</label>
+            <div>
+            <input type="radio" id="Homme" name="genre" value="Homme" required>
+            <label for="Homme">Homme</label>
+            </div>
+            <div>
+            <input type="radio" id="Femme" name="genre" value="Femme" required>
+            <label for="Femme">Femme</label>
+            </div>
+            <br><br>
+
+        <label for="interets">Centres d'intérêt :</label>
+        <br>
+        <input type="checkbox" id="sport" name="interets[]" value="Sport">
+        <label for="sport">Sport</label>
+        <br>
+        <input type="checkbox" id="musique" name="interets[]" value="Musique">
+        <label for="musique">Musique</label>
+        <br>
+        <input type="checkbox" id="lecture" name="interets[]" value="Lecture">
+        <label for="lecture">Lecture</label>
+        <br><br>
+
+        <label for="Specialite">Specialite</label>
+        <select id="spe" name="Specialite" required>
+            <option value="Informatique">Informatique</option>
+            <option value="ST">ST</option>
+            <option value="SM">SM</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>
