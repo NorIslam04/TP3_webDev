@@ -15,7 +15,5 @@
         echo "<p><strong>Genre :</strong> " . htmlspecialchars($_POST['genre']) . "</p>";
 
         echo "<p><strong>Message :</strong> " . nl2br(htmlspecialchars($_POST['message'])) . "</p>";
-    } else {
-        echo "<p>Aucune donnée reçue. Veuillez soumettre le formulaire.</p>";
     }
     ?>

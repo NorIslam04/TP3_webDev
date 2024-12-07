@@ -1,11 +1,11 @@
 <table border="1">
     <?php
     $etudiants = [
-        ["nom" => "Alice", "moyenne" => 15],
-        ["nom" => "Bob", "moyenne" => 9],
-        ["nom" => "Charlie", "moyenne" => 12],
-        ["nom" => "David", "moyenne" => 8],
-        ["nom" => "Eve", "moyenne" => 14]
+        ["nom" => "islam", "moyenne" => 18],
+        ["nom" => "younes", "moyenne" => 12],
+        ["nom" => "walid", "moyenne" => 7],
+        ["nom" => "omar", "moyenne" => 2],
+        ["nom" => "salah", "moyenne" => 19]
     ];
     
     $taille = count($etudiants);
@@ -15,11 +15,11 @@
         if ($etudiants[$i]['moyenne'] >= 10) {
             echo "<tr>
                 <td>" . $etudiants[$i]['nom'] . "</td>
-                <td style='background-color: rgba(0, 128, 0, 0.724);'>" . $etudiants[$i]['moyenne'] . "</td></tr>";
+                <td style='background-color: rgb(61, 195, 61);'>" . $etudiants[$i]['moyenne'] . "</td></tr>";
         } else {
             echo "<tr>
                 <td>" . $etudiants[$i]['nom'] . "</td>
-                <td style='background-color: rgba(128, 21, 0, 0.644);'>" . $etudiants[$i]['moyenne'] . "</td></tr>";
+                <td style='background-color: rgb(209, 67, 39);'>" . $etudiants[$i]['moyenne'] . "</td></tr>";
         }
         $i++;
     }
