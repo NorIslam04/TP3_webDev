@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter une Personne</title>
+</head>
+<body>
+    <form action="updatePerson.php" method="POST">
+        <label for="form_id">id:</label>
+        <input type="number" name="valid" id="form_id" required><br>
+
+        <label for="form_nom">Nom:</label>
+        <input type="text" name="valNom" id="form_nom" required><br>
+
+        <label for="form_prenom">Prénom:</label>
+        <input type="text" name="valPrenom" id="form_prenom" required><br>
+
+        <label for="form_points">Points:</label>
+        <input type="number" name="valPoints" id="form_points" required><br>
+
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
