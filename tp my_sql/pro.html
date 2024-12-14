@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Étudiants</title>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="global" style="border: 1px solid black;">
+        <div class="div_inputs">
+            <label>Nom:</label>
+            <input class="inputs" id="nom" type="text" required>
+            <label>Prenom:</label>
+            <input class="inputs" id="prenom" type="text" required>
+            <label>Points:</label>
+            <input class="inputs" id="point" type="text" required>
+            <button id="btn_ajouter" onclick="addRow()">Ajouter</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Points</th>
+                    <th>Sélection</th>
+                    <th>Action</th> <!-- Nouvelle colonne pour le bouton Modifier -->
+                </tr>
+            </thead>
+            <tbody id="studentTable"></tbody>
+        </table>
+        
+
+        <button id="btn_delete" onclick="deleteRows()">Supprimer</button>
+    </div>
+</body>
+</html>

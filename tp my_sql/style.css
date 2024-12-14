@@ -1,0 +1,105 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(109, 109, 109, 0.526);
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.global{
+    border: solid 1px;
+    margin-top: 30px;
+}
+   
+
+
+table td, table tr{
+    border: solid 1px;
+    width: 100px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 30px;
+}
+.thead{
+    background-color: rgb(29, 98, 182);
+    font-weight: bold;
+    color: aliceblue;
+}
+table{
+    border: solid 1px;
+    border-collapse: collapse;
+    margin:20px auto;
+    
+}
+.tr:hover{
+    background-color: rgba(29, 98, 182, 0.120);
+}
+
+#checkbox:hover{
+    cursor: pointer;
+}
+.div_inputs{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.inputs{
+   width: 150px;
+}
+
+#btn_ajouter{
+    border-radius: 7px;
+    background-color: rgb(63, 206, 85);
+    border: 0px;
+    font-size: inherit;
+    padding: 4px;
+    margin-left: 5px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.nom, .prenom{
+    width: 200px;
+}
+
+.point{
+    width: 120px;
+}
+
+tfoot{
+    background-color: rgb(27, 27, 27);
+}
+tfoot tr , tfoot td{
+    color: aliceblue;
+    border: none;
+}
+
+#btn_delete{
+    color: aliceblue;
+    background-color: red;
+    border-radius: 5px;
+    border: 0px;
+    padding: 5px;
+    font-size: inherit;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#btn_console{
+    color: aliceblue;
+    background-color: rgb(255, 123, 0);
+    border-radius: 5px;
+    border: 0px;
+    padding: 5px;
+    font-size: inherit;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+checkbox{
+    cursor: pointer;
+}
